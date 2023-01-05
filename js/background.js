@@ -1,14 +1,13 @@
 const images = [
-    "https://i.pinimg.com/originals/85/22/50/852250e8aa70a9d0e983372b642058cd.jpg",
-    "https://t1.daumcdn.net/cfile/tistory/2305624B58C6C74B18",
-    "https://mblogthumb-phinf.pstatic.net/MjAxODAyMDRfMjM3/MDAxNTE3Njc2ODc4MTI3.lNuPv5-N9JtO7ClKXTmwMWPMUQxjoALWFvBLrryj4qcg.JC4r6CfGfuzlheSA79KdXDoVTMli9LeXv_stOMsWCpog.PNG.d_hye97/8948956.png?type=w800",
-    "https://t1.daumcdn.net/cfile/tistory/2736AF3457EFC67229?original",
+    "https://i.pinimg.com/600x315/2c/f0/9c/2cf09c7c63d18790859aafed5941a766.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKWSCgK7dZcJ_QEiHtghiqjHNVQJnKAE2AOg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3sXP6AcS-rDp3RaGjH1RWTwXM94plp31RU1_8tfXm5niNTQYbmrzyynFh7b24B02roks&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2m9kjYk7El3BJe50C9USEe9vcbb3YrFQyEA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx71x0mZnQbArm4gIQ8Fh0cvj6KsE7A4YaP4PHYOXWHWJdhwbe2YePbO96Q5MKfFGfeFc&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DLDL7vWMQfgSVA6nwovUZdpeEM3lEsxrhA&usqp=CAU"
 ]
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img");
-
-bgImage.src = chosenImage;
-
-document.body.appendChild(bgImage);
+document.body.style.backgroundImage = `url(${chosenImage})`;
+document.body.style.backgroundSize="100vw 100vh";

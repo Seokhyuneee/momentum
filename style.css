@@ -1,14 +1,144 @@
 .hidden {
-    display: none;
+    display: none !important;
+}
+
+body::-webkit-scrollbar {
+    display:none;
+}
+
+#todaySong {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todaySong>span {
+    font-weight: 600;
+    margin:0px 7px;
+}
+#todaySong>span:last-child {
+    animation: bigAndsmall 1s ease-in-out infinite;
+    color:rgb(255, 72, 72);
 }
 
 #clock {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: violet;
-    font-size: 30px;
-    color: white;
-    padding: 20px 20px;
+    font-size: 80px;
+    color: rgb(187, 0, 255);
+    font-weight:600;
+    padding: 20px;
+    border-bottom:7px solid rgb(255, 255, 167);
+    margin:70px 70px 30px 70px;
+}
+
+#login-form {
+    display:flex;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+#login-form>input {
+    width:30%;
+    padding:10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border:none;
+    font-weight: 600;
+    transition:all 0.5s ease-in-out;
+}
+
+#login-form>input::placeholder {
+    opacity:0.4;
+    text-align: center;
+}
+
+#login-form>input:focus {
+    background-color: rgb(229, 204, 250);
+}
+
+#login-form>button {
+    background-color: rgb(255, 255, 167);
+    font-size:13px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border:none;
+    transition:all 0.5s ease-in-out;
+}
+
+#greeting {
+    text-align: center;
+    font-size:40px;
+    color: black;
+    margin:15px 0px;
+}
+
+@keyframes bigAndsmall {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body>span {
+    display:flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size:24px;
+    animation: bigAndsmall 1s ease-in-out infinite;
+    margin-bottom:10px;
+}
+
+#todo-form {
+    display:flex;
+    justify-content: center;
+}
+
+#todo-form input {
+    width:50%;
+    padding:10px 10px 10px 30px;
     border-radius: 20px;
+    border:none;
+    font-weight: 600;
+    font-size:16px;
+}
+
+#todo-form input::placeholder {
+    text-align: center;
+    opacity:0.4;
+}
+
+#todo-list {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-list li {
+    display:flex;
+    align-items: center;
+    font-size:18px;
+    font-weight: 600;
+    padding:3px;
+}
+
+#todo-list li>span {
+    border-bottom: 4px double rgb(0,0,0);
+}
+
+#todo-list button {
+    margin-left:10px;
+    color:red;
+    font-weight: 600;
+    border:1px solid rgba(0,0,0,0.5);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
 }

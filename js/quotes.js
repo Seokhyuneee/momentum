@@ -1,49 +1,43 @@
-const quotes = [
+const songs = [
     {
-    quote: 'I never dreamed about success, I worked for it',
-    author: 'Estee Lauder'
+        song: 'Ditto',
+        singer: 'NewJeans'
     },
     {
-    quote: 'Do not try to be original, just try to be good.',
-    author: 'Paul Rand'
+        song: '사건의 지평선',
+        singer: '윤하(YOUNHA)'
     },
     {
-    quote: 'Do not be afraid to give up the good to go for the great',
-    author: 'John D. Rockefeller'
+        song: 'ANTIFRAGILE',
+        singer: 'LE SSERAFIM(르세라핌)'
     },
     {
-    quote: 'If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.',
-    author: 'Martin Luther King Jr.'
+        song: 'After LIKE',
+        singer: 'IVE(아이브)'
     },
     {
-    quote: 'Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.',
-    author: 'Thomas Edison'
+        song: 'Destiny(나의 지구)',
+        singer: 'LOVELYZ(러블리즈)'
     },
     {
-    quote: 'The fastest way to change yourself is to hang out with people who are already the way you want to be',
-    author: 'REid Hoffman'
+        song: '너의 모든 순간',
+        singer: '성시경'
     },
     {
-    quote: 'Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you are not doing a tour of gas stations',
-    author: 'Tim O Reilly'
+        song: 'Shut Down',
+        singer: 'BLACKPINK'
     },
     {
-    quote: 'Some people dream of success, while other people get up every morning and make it happen',
-    author: 'Wayne Huizenga'
+        song: 'Nxde',
+        singer: '(여자)아이들'
     },
     {
-    quote: 'The only thing worse than starting something and falling.. is not starting something',
-    author: 'SEth Godin'
-    },
-    {
-    quote: 'If you really want to do something, you will find a way. If you do not, you will find an excuse.',
-    author: 'Jim Rohn'
+        song: '이제 나만 믿어요',
+        singer: '임영웅'
     },
     ];
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const songTD = document.querySelector("#todaySong span:last-child");
 
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+const todaysSong = songs[Math.floor(Math.random() * songs.length)];
 
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+songTD.innerText = `${todaysSong.song} - ${todaysSong.singer}`;
