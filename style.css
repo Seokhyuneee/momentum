@@ -21,6 +21,18 @@ body::-webkit-scrollbar {
     color:rgb(255, 72, 72);
 }
 
+#weather {
+    display:flex;
+    justify-content: flex-end;
+    position:relative;
+    top:-40px;
+}
+
+#weather>span {
+    margin:0px 3px;
+    font-weight: 600;
+}
+
 #clock {
     display: flex;
     flex-direction: column;
