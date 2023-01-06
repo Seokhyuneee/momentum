@@ -23,9 +23,9 @@ body::-webkit-scrollbar {
 
 #weather {
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
     position:relative;
-    top:-40px;
+    top:210px;
 }
 
 #weather>span {
